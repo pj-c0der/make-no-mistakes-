@@ -230,5 +230,107 @@
     "ast_hash": "cb6605f5661b656b29765e36b6b31d04",
     "semantic_hash": "cb6605f5661b656b29765e36b6b31d04",
     "ast_empty": true
+  },
+  ".agents/skills/caveman/README.md": {
+    "mtime": 1794501781.018778,
+    "seen": 1794505602.2181354,
+    "ast_hash": "c6565f2f610ce9f2bab13b09009d8c2b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/caveman/SKILL.md": {
+    "mtime": 1794501781.018778,
+    "seen": 1794505602.2181354,
+    "ast_hash": "56b2f9db32197569a4a53b69bd8e859d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ponytail/SKILL.md": {
+    "mtime": 1794501805.1759844,
+    "seen": 1794505602.2181354,
+    "ast_hash": "1dfb5c89a3089b4ee76f314258b7a2b3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ui-ux-pro-max/SKILL.md": {
+    "mtime": 1794501834.8778553,
+    "seen": 1794505602.2181354,
+    "ast_hash": "dfb4eef3ababda865c75698f974a9092",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ui-ux-pro-max/references/pro-rules.md": {
+    "mtime": 1794501834.9047341,
+    "seen": 1794505602.2181354,
+    "ast_hash": "09930cd335a0c214a382ed1559add8ea",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ui-ux-pro-max/references/quick-reference.md": {
+    "mtime": 1794501834.9047341,
+    "seen": 1794505602.2181354,
+    "ast_hash": "b9e89828b18513769846096eaedf8804",
+    "semantic_hash": ""
+  },
+  ".agents/skills/using-superpowers/SKILL.md": {
+    "mtime": 1794501755.65587,
+    "seen": 1794505602.2181354,
+    "ast_hash": "c6662ff3c8318760ba672522bb9b5811",
+    "semantic_hash": ""
+  },
+  ".agents/skills/using-superpowers/references/antigravity-tools.md": {
+    "mtime": 1794501755.6568663,
+    "seen": 1794505602.2181354,
+    "ast_hash": "e59b6ae94e905eb99c2116e2239524e3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/using-superpowers/references/claude-code-tools.md": {
+    "mtime": 1794501755.6568663,
+    "seen": 1794505602.2181354,
+    "ast_hash": "7fb335e9ad49d9e582b563971868f8d4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/using-superpowers/references/codex-tools.md": {
+    "mtime": 1794501755.6578622,
+    "seen": 1794505602.2181354,
+    "ast_hash": "d062681bbcd0d92e02e8ad33beffa66c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/using-superpowers/references/gemini-tools.md": {
+    "mtime": 1794501755.6578622,
+    "seen": 1794505602.2181354,
+    "ast_hash": "ff013e7bf3aeccf03dde0991a44cc05b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/using-superpowers/references/hermes-tools.md": {
+    "mtime": 1794501755.6588597,
+    "seen": 1794505602.2181354,
+    "ast_hash": "272fe5bdc0afe781370c6e77ee526783",
+    "semantic_hash": ""
+  },
+  ".agents/skills/using-superpowers/references/muse-tools.md": {
+    "mtime": 1794501755.6588597,
+    "seen": 1794505602.2181354,
+    "ast_hash": "9251fab73288678db85e22fe956acffb",
+    "semantic_hash": ""
+  },
+  ".agents/skills/using-superpowers/references/pi-tools.md": {
+    "mtime": 1794501755.659855,
+    "seen": 1794505602.2181354,
+    "ast_hash": "eb8697d87b1f763f007cb2fdac3257a5",
+    "semantic_hash": ""
+  },
+  ".kiro/specs/resibowise-ph/requirements.md": {
+    "mtime": 1794505510.8779993,
+    "seen": 1794505602.2181354,
+    "ast_hash": "68e9ed21e3ac05c15c238c30508d3b7a",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1794505282.5302281,
+    "seen": 1794505602.2181354,
+    "ast_hash": "34a0ee5a7c15a8130441204a3d5319dd",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794495715.5570738,
+    "seen": 1794505602.2181354,
+    "ast_hash": "50e4348da2c937c3185d2d11ea5782fd",
+    "semantic_hash": ""
   }
 }
