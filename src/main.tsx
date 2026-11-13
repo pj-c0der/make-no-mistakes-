@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import NotFound from "./pages/NotFound";
 import PlaceholderHome from "./pages/PlaceholderHome";
 import "./index.css";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     element: <App />,
     errorElement: <App />,

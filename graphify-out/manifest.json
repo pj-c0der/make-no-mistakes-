@@ -352,15 +352,15 @@
     "semantic_hash": ""
   },
   "tsconfig.json": {
-    "mtime": 1794539916.83284,
-    "seen": 1794539922.5906007,
-    "ast_hash": "e036a6f73ce688be8add23a5a3ee67b4",
+    "mtime": 1794542314.9423623,
+    "seen": 1794542322.4398975,
+    "ast_hash": "4b3adcc24c5f0adda9ece5db7bdd30ee",
     "semantic_hash": ""
   },
   "vite.config.ts": {
-    "mtime": 1794541452.724707,
-    "seen": 1794541458.7277977,
-    "ast_hash": "494928c3c0dc7b2586fe59298d5288d0",
+    "mtime": 1794543215.2972226,
+    "seen": 1794543246.320603,
+    "ast_hash": "541c4f0f858492c6c40e208676a6753a",
     "semantic_hash": ""
   },
   "index.html": {
@@ -370,9 +370,9 @@
     "semantic_hash": ""
   },
   "src/main.tsx": {
-    "mtime": 1794540015.8063111,
-    "seen": 1794540021.8348353,
-    "ast_hash": "032865d55930e11259dd3e1613c449ad",
+    "mtime": 1794542049.9757075,
+    "seen": 1794542056.3112013,
+    "ast_hash": "d7caad2210c6e3ae1c508ea9c201ffc6",
     "semantic_hash": ""
   },
   "src/App.tsx": {
@@ -451,6 +451,60 @@
     "mtime": 1794541463.0702727,
     "seen": 1794541469.5022569,
     "ast_hash": "3c31c74439dc9f9d1de562dc80cb71ae",
+    "semantic_hash": ""
+  },
+  "shared/types.ts": {
+    "mtime": 1794542625.596202,
+    "seen": 1794542633.3180213,
+    "ast_hash": "b773fee1145aaac7240c1b2ff44d6657",
+    "semantic_hash": ""
+  },
+  "shared/config.ts": {
+    "mtime": 1794542963.559314,
+    "seen": 1794542971.47154,
+    "ast_hash": "8879a5781831fd5bcd4bbf5c18d7895e",
+    "semantic_hash": ""
+  },
+  "shared/money.ts": {
+    "mtime": 1794543664.4126039,
+    "seen": 1794543670.2551446,
+    "ast_hash": "4cbad1bced3a2d903c65fd93acac1951",
+    "semantic_hash": ""
+  },
+  "shared/dates.ts": {
+    "mtime": 1794543688.8889294,
+    "seen": 1794543689.9911296,
+    "ast_hash": "1775584088cc246b5493a7bc5dbe49bc",
+    "semantic_hash": ""
+  },
+  "shared/validation.ts": {
+    "mtime": 1794543952.3597262,
+    "seen": 1794543958.0792816,
+    "ast_hash": "df302b32c7cadb141bfb5f80c2516654",
+    "semantic_hash": ""
+  },
+  "shared/receiptParser.ts": {
+    "mtime": 1794543722.9045098,
+    "seen": 1794543728.6035924,
+    "ast_hash": "6c087aeb2e43c4d88c47a9b00ab101bc",
+    "semantic_hash": ""
+  },
+  "shared/selectors.ts": {
+    "mtime": 1794543920.4714444,
+    "seen": 1794543925.8463354,
+    "ast_hash": "5c827ffc57ba3e5970c1206fd870f35f",
+    "semantic_hash": ""
+  },
+  "shared/draft.ts": {
+    "mtime": 1794543694.309819,
+    "seen": 1794543700.0872426,
+    "ast_hash": "13782dd7b30f415ab56f6c3f4f1f3f47",
+    "semantic_hash": ""
+  },
+  "shared/index.ts": {
+    "mtime": 1794543158.9647553,
+    "seen": 1794543165.1906629,
+    "ast_hash": "c01cab6f223244b0718b48807262adb9",
     "semantic_hash": ""
   },
   "package-lock.json": {
