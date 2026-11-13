@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node scripts/test.mjs && node --test tests/api-scaffold.test.mjs tests/shared-config.test.mjs",
+    "typecheck": "tsc --noEmit && tsc --project tsconfig.test.json"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "1.1.2",
@@ -22,6 +24,9 @@
     "tailwind-merge": "3.0.1"
   },
   "devDependencies": {
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.10",
     "@types/node": "22.10.1",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
@@ -32,9 +37,13 @@
     "eslint": "8.57.1",
     "eslint-plugin-react": "7.37.2",
     "eslint-plugin-react-hooks": "5.0.0",
+    "fake-indexeddb": "6.2.8",
+    "fast-check": "4.10.2",
+    "jsdom": "31.0.0",
     "postcss": "8.4.49",
     "tailwindcss": "3.4.15",
     "typescript": "5.6.3",
-    "vite": "6.0.1"
+    "vite": "6.0.1",
+    "vitest": "3.2.7"
   }
 }

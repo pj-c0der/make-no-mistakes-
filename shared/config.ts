@@ -80,10 +80,12 @@ export const VERIFIED_LIMITS: {
 
 /**
  * Stricter-of rule (Requirement 24.2): the effective limit is the minimum
- * of the defined (non-zero) values. Returns 0 when nothing is configured —
- * consumers fail closed (nothing may be uploaded).
+ * of the defined (non-zero) values. An UNSET application cap always returns 0,
+ * even when external caps exist — consumers fail closed (nothing may be uploaded).
  */
 export function effectiveMaxBytes(): number {
+  if (CONFIG.MAX_IMAGE_BYTES === 0) return 0;
+
   const candidates = [
     CONFIG.MAX_IMAGE_BYTES,
     VERIFIED_LIMITS.lumenMaxBytes,
