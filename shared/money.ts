@@ -31,6 +31,11 @@ export function parseAmount(_input: string): ParseAmountResult {
   throw new Error('not implemented: parseAmount (Task 1.2 stub)');
 }
 
+/** Format centavos as a plain decimal string. STUB: implemented in Task 3.1. */
+export function formatPlain(_centavos: Centavos): string {
+  throw new Error('not implemented: formatPlain (Task 1.2 stub)');
+}
+
 /**
  * Format centavos as a peso string, e.g. "₱1,234.50".
  * Integer division + manual thousands grouping; no float toFixed.
@@ -39,4 +44,9 @@ export function parseAmount(_input: string): ParseAmountResult {
  */
 export function formatPeso(_centavos: Centavos): string {
   throw new Error('not implemented: formatPeso (Task 1.2 stub)');
+}
+
+/** Sum integer centavo amounts. STUB: implemented in Task 3.1. */
+export function sumCentavos(_amounts: readonly Centavos[]): Centavos {
+  throw new Error('not implemented: sumCentavos (Task 1.2 stub)');
 }

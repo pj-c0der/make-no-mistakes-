@@ -254,6 +254,8 @@ export interface TransactionRepository {
    * valid/invalid split. Invalid records are not deleted or overwritten.
    */
   list(): Promise<TransactionListResult>;
+  /** Read one transaction by id; a missing id resolves to undefined. */
+  get(id: string): Promise<Transaction | undefined>;
   /**
    * Insert or replace by id (idempotent put, 7.4).
    * Rejects with StorageError on quota/unavailable/unknown write failure.

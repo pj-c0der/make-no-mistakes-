@@ -20,3 +20,4 @@ coverage/
 
 # Graphify cache (regenerated locally; not part of the app)
 graphify-out/
+.vercel
