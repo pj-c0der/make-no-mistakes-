@@ -10,7 +10,12 @@ The signature feature, ResiboVerify, shows the original receipt image next to th
 
 **Competition context.** The competition requires a working web application, at least one real Lumen tool, and a clearly identified Filipino user group. ResiboWise PH selects Lumen OCR as its Lumen tool. The identified user group is Filipino household budget managers. The safe submission deadline is 2:00 PM unless the organizers confirm otherwise. The team consists of two developers, BELLEN and CLAVITE.
 
-**Status of this document.** This is a draft. It has not yet received final team approval.
+**Status of this document.** Status: APPROVED FOR IMPLEMENTATION.
+
+- Approval date: November 13, 2026.
+- Approved by the ResiboWise PH development team: BELLEN — Frontend Developer; CLAVITE — Backend Developer.
+- Approval record: BELLEN explicitly confirmed on November 13, 2026 that both BELLEN and CLAVITE reviewed and approved the requirements, design and tasks. CLAVITE's approval is recorded as "confirmed by BELLEN on behalf of the team". The hackathon organizers have not approved these specifications.
+- Scope of approval: this is a team decision to authorize implementation of the approved MVP. It does not verify any external dependency. The Open Items below (notably the Lumen API contract) remain open until confirmed from organizer documentation.
 
 **Lumen API contract is unverified.** The official Lumen API contract has not been verified. This document does not state any endpoint, authentication scheme, request or response schema, field name, confidence value, supported image format, file size limit, or rate limit as fact. Such details are recorded under Open Items. This document distinguishes three layers:
 
@@ -21,7 +26,7 @@ The signature feature, ResiboVerify, shows the original receipt image next to th
 Requirements are organized into four groups:
 
 - **Group A: Organizer-Confirmed Requirements.** Stated by the hackathon organizers.
-- **Group B: Proposed Core MVP Requirements.** The core MVP, proposed by the team and not yet finally approved. These MUST be completed first.
+- **Group B: Core MVP Requirements.** The core MVP, approved by the team on November 13, 2026. These MUST be completed first.
 - **Group C: Optional Enhancements.** These MUST NOT block completion of the MVP.
 - **Group D: Provisional Technical Assumptions.** Technical direction that is not confirmed and may change at design time.
 
@@ -67,7 +72,7 @@ The organizers require at least one real Lumen tool. ResiboWise PH selects Lumen
 
 ### Group B: Proposed Core MVP Requirements
 
-This group is the proposed core MVP. It has not yet received final team approval.
+This group is the core MVP. It was approved by the team on November 13, 2026 (confirmed by BELLEN on behalf of BELLEN and CLAVITE).
 
 ### Requirement 2: Receipt Image Intake
 
@@ -383,7 +388,7 @@ These items MUST be resolved from verified sources or by team decision before th
 
 ### Team Decisions
 
-8. **Final approval of Group B.** Both developers (BELLEN and CLAVITE) must approve the Proposed Core MVP scope.
+8. **Final approval of Group B.** RESOLVED on November 13, 2026: the Core MVP scope was approved by BELLEN and CLAVITE (confirmed by BELLEN on behalf of the team).
 9. **Payable_Total proposal rules.** Decide, using sample Philippine receipts (including VAT lines and Senior Citizen/PWD discounts), which receipt layouts the parser supports and when it proposes a value versus requires user selection.
 10. **Rate-limiting mechanism.** Decide in the design phase an abuse-protection mechanism that works across serverless instances, and its limit values.
 11. **Processing timeout.** Decide the timeout value.

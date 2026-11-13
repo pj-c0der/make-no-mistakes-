@@ -1,6 +1,12 @@
 # Design Document
 
-**Status: Draft — pending team review.** This design has not been approved by BELLEN, CLAVITE or the organizers. Requirements approval is also not assumed. Nothing in this document authorizes implementation.
+**Status: APPROVED FOR IMPLEMENTATION.**
+
+- Approval date: November 13, 2026.
+- Approved by the ResiboWise PH development team: BELLEN — Frontend Developer; CLAVITE — Backend Developer.
+- Approval record: BELLEN explicitly confirmed on November 13, 2026 that both team members reviewed and approved the requirements, design and tasks. CLAVITE's approval is recorded as "confirmed by BELLEN on behalf of the team". The hackathon organizers have not approved these specifications.
+- Scope of approval: the team approved this architecture. It did NOT verify any external service. The Lumen API contract, Lumen limits, Lumen reachability from Vercel, the Vercel WAF configuration and deployment runtime settings remain unverified and are tracked in Sections 5.6, 7.3, 8.2 and 11.1. Earlier "draft / pending review" wording elsewhere in this document is historical.
+- The AGENTS.md approval sequence (requirements, design, tasks) is satisfied by this recorded team decision. Implementation still proceeds only task by task, subject to task dependencies and the documented external blockers.
 
 ## Overview
 
@@ -499,7 +505,7 @@ Items 1–6 of this checklist are required before `lumenProvider.ts` is written;
 
 Messages always state what failed and the next step (13.3), and never rely on color alone (13.5). `{max}` is read from `effectiveMaxBytes()`.
 
-**Proposed Change PC-1 — NOT APPLIED, for team approval.** Add optional client-side downscaling/compression (canvas re-encode to a supported type) when a selected image exceeds the effective limit, so the *processed derivative* is submitted instead of rejecting. This changes how Requirement 2.6 ("reject the file") is interpreted, so it needs explicit team approval and a requirement clarification before it is built. If approved, the preview and ResiboVerify would still show the image that was actually sent, and the size check would apply to the derivative. Alternatives that need a new service (for example direct-to-storage upload) are not proposed because AGENTS.md forbids adding services without an approved requirement.
+**Proposed Change PC-1 — NOT APPLIED; retained as an optional proposed change (decision D2: no automatic compression in the initial MVP).** Add optional client-side downscaling/compression (canvas re-encode to a supported type) when a selected image exceeds the effective limit, so the *processed derivative* is submitted instead of rejecting. This changes how Requirement 2.6 ("reject the file") is interpreted, so it needs explicit team approval and a requirement clarification before it is built. If approved, the preview and ResiboVerify would still show the image that was actually sent, and the size check would apply to the derivative. Alternatives that need a new service (for example direct-to-storage upload) are not proposed because AGENTS.md forbids adding services without an approved requirement.
 
 ## Receipt Verification Flow (ResiboVerify)
 
@@ -885,16 +891,18 @@ Rule: optional features add files and store versions but never alter core functi
 
 Items 1, 3, 5 and 7 are blocking for the "real Lumen integration is mandatory" requirement and should be resolved first. The Lumen API contract (items 1–3) is the single largest blocker: keys and a secret were issued, but no endpoint, authentication usage or response format is documented to the team (Section 5.6 checklist).
 
-### 11.5 Decisions needing team approval (none are assumed approved)
+### 11.5 Team decisions (recorded November 13, 2026; confirmed by BELLEN on behalf of BELLEN and CLAVITE)
 
-| # | Decision | Default in this draft |
-|---|---|---|
-| D1 | Approve this reduced mandatory testing scope (11 properties, 50 or fewer configurable iterations, one real Lumen test, one manual E2E) | Proposed as written |
-| D2 | PC-1: client-side image downscaling/compression, which changes the interpretation of Requirement 2.6 | Not applied; MVP rejects oversize files with guidance |
-| D3 | Local dev approach: `vercel dev` vs Vite proxy + local Node script (and any dev dependency it needs) | `vercel dev` primary, proxy documented as alternative |
-| D4 | WAF rate-limit values and whether the plan supports it | Not configured |
-| D5 | Mock guard rules (Section 5.2) and `LOCAL_MOCK_OCR` flag name | Proposed as written |
-| D6 | Approval of requirements, this design, and tasks (AGENTS.md approval sequence) | **Pending** — no approval assumed |
+Approved decisions are listed separately from the still-unknown configuration values noted in the last column.
+
+| # | Decision | Status | Still unverified / open |
+|---|---|---|---|
+| D1 | Adopt the reduced mandatory testing plan (11 properties, 50 or fewer configurable iterations, one real Lumen test, one manual deployed E2E) | APPROVED | Real Lumen test is blocked until the Lumen contract is verified |
+| D2 | No automatic image compression in the initial MVP; the MVP rejects oversize files with guidance. PC-1 (client-side downscaling) stays an optional proposed change | APPROVED | PC-1 would need a Requirement 2.6 clarification before being built |
+| D3 | `vercel dev` is the initial local backend approach; the Vite proxy plus local Node script remains the documented alternative | APPROVED | Behavior of `vercel dev` with Vite and `/api` is to be verified on the team's machines |
+| D4 | Implement the documented abuse-protection approach (WAF rule as primary, best-effort in-memory limiter, cheap guards, kill switch) | APPROVED as an approach | Actual rate-limit values and the Vercel WAF configuration are NOT configured and NOT tested; Requirement 14.5 is not claimed satisfied until a rule exists and a test passes |
+| D5 | Approve the local/test-only mock OCR safeguards (Section 5.2) | APPROVED | Behavior of `VERCEL_ENV` under `vercel dev` to be verified |
+| D6 | Requirements, design and tasks approved by the team | APPROVED | Not an organizer approval |
 
 ### 11.2 Minimum shared contracts before parallel work
 

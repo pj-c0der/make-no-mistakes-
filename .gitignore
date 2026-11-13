@@ -1,7 +1,22 @@
+# Dependencies
 node_modules/
+
+# Production build output
 dist/
-.env
-.env.*
+
+# Environment files
+.env*
 !.env.example
-.vercel/
-*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Test / coverage
+coverage/
+*.tsbuildinfo
+
+# Graphify cache (regenerated locally; not part of the app)
+graphify-out/
